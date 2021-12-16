@@ -19,13 +19,13 @@
 
 <body>
 
-    <header>
+    <header class="header">
         <div class="container">
             <div class="nav">
     
                 <a href="#" class="logo"><span class="header-logo-decor">Web</span>Studio</a>
     
-                <nav>
+                <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-list-item"><a href="./index.html" class="nav-link nav-link-active">Студия</a></li>
                         <li class="nav-list-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
@@ -34,17 +34,19 @@
                 </nav>
     
                 <ul class="contacts">
-                    <li class="item"><a href="mailto:info@devstudio.com" class="contacts-contact">
-                        <svg class="contacts-sprite">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
+                    <li class="item">
+                        <a href="mailto:info@devstudio.com" class="contacts-contact">
+                            <svg class="icon-contact" width="16px" height="12px">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
                     </li>
-                    <li class="item"><a href="tel:+380961111111" class="contacts-contact">
-                        <svg class="contacts-sprite-2">
-                            <use  href="images/sprite.svg#icon-Vector"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
+                    <li class="item">
+                        <a href="tel:+380961111111" class="contacts-contact">
+                            <svg class="icon-contact" width="10px" height="16px">
+                                <use href="./images/sprite.svg#icon-Vector"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
                     </li>
                 </ul>
     
@@ -53,11 +55,13 @@
     </header>
     
     <main>
-        <section class="baner">
+        <section class="section baner">
     
             <div class="container">
+                <div class="baner-container">
                     <h1 class="baner-title">Эффективные решения <br>для вашего бизнеса</h1>
                     <button type="button" class="baner-button">Заказать услугу</button>
+                </div>
             </div>
     
         </section>
@@ -67,8 +71,8 @@
                 <h2 class="none">Skills</h2>
                 <ul class="skills-list">
                     <li class="skills-item">
-                        <div class="sprite-cont">
-                            <svg class="skills-sprite">
+                        <div class="skills-img">
+                            <svg class="s-item">
                                 <use href="images/sprite.svg#icon-antenna-1"></use>
                             </svg>
                         </div>
@@ -77,10 +81,12 @@
                             позиции.</p>
                     </li>
                     <li class="skills-item">
-                        <div class="sprite-cont">
-                            <svg class="skills-sprite">
-                                <use href="images/sprite.svg#icon-clock-1"></use>
-                            </svg>
+                        <div class="skills-img">
+                            <div class="skills-img">
+                                <svg class="s-item">
+                                    <use href="images/sprite.svg#icon-clock-1"></use>
+                                </svg>
+                            </div>
                         </div>
                         <h3 class="skills-title">Пунктуальность</h3>
                         <p class="skills-text">Задача организации, в особенности же рамки и место обучения кадров влечет за
@@ -88,8 +94,8 @@
                         </p>
                     </li>
                     <li class="skills-item">
-                        <div class="sprite-cont">
-                            <svg class="skills-sprite">
+                        <div class="skills-img">
+                            <svg class="s-item">
                                 <use href="images/sprite.svg#icon-diagram-1"></use>
                             </svg>
                         </div>
@@ -99,8 +105,8 @@
                         </p>
                     </li>
                     <li class="skills-item">
-                        <div class="sprite-cont">
-                            <svg class="skills-sprite">
+                        <div class="skills-img">
+                            <svg class="s-item">
                                 <use href="images/sprite.svg#icon-astronaut-1"></use>
                             </svg>
                         </div>
@@ -130,211 +136,210 @@
                 <ul class="we-list">
                     <li class="we-list-item">
                         <img src="images//index/demyanenko.jpg" alt="Игорь Демьяненко" width="270" class="we-img" />
-                        <div class="item-back">
-                        <h3 class="we-name">Игорь Демьяненко</h3>
-                        <p class="we-proffesion">Product Designer</p>
-                        </div>
-                        <div class="we-sprite-cont">
-                            <button class="we-link">
-                                <svg class="we-sprite-1 items">
-                                    <use href="images/sprite.svg#icon-instagram-2"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-2 items">
-                                    <use href="images/sprite.svg#icon-twitter-1-1"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-3 items">
-                                    <use href="images/sprite.svg#icon-facebook-1"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-4 items">
-                                    <use href="images/sprite.svg#icon-linkedin-1"></use>
-                                </svg>
-                            </button>
+                        <div class="we-block">
+                            <h3 class="we-name">Игорь Демьяненко</h3>
+                            <p class="we-proffesion">Product Designer</p>
+    
+                            <div class="social">
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-twitter-1-1"></use>
+                                    </svg></a>
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-facebook-1"></use>
+                                    </svg></a>
+                                <a href="# " class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-linkedin-1"></use>
+                                    </svg></a>
+                            </div>
                         </div>
                     </li>
                     <li class="we-list-item">
                         <img src="images//index/repina.jpg" alt="Ольга Репина" width="270" class="we-img" />
-                        <div class="item-back">
-                        <h3 class="we-name">Ольга Репина</h3>
-                        <p class="we-proffesion">Frontend Developer</p>
-                        </div>
-                        <div class="we-sprite-cont">
-                            <button class="we-link">
-                                <svg class="we-sprite-1 items">
-                                    <use href="images/sprite.svg#icon-instagram-2"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-2 items">
-                                    <use href="images/sprite.svg#icon-twitter-1-1"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-3 items">
-                                    <use href="images/sprite.svg#icon-facebook-1"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-4 items">
-                                    <use href="images/sprite.svg#icon-linkedin-1"></use>
-                                </svg>
-                            </button>
+                        <div class="we-block">
+                            <h3 class="we-name">Ольга Репина</h3>
+                            <p class="we-proffesion">Frontend Developer</p>
+                            <div class="social">
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-twitter-1-1"></use>
+                                    </svg></a>
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-facebook-1"></use>
+                                    </svg></a>
+                                <a href="# " class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-linkedin-1"></use>
+                                    </svg></a>
+                            </div>
                         </div>
                     </li>
                     <li class="we-list-item">
                         <img src="images//index/tarasov.jpg" alt="Николай Тарасов" width="270" class="we-img" />
-                        <div class="item-back">
-                        <h3 class="we-name">Николай Тарасов</h3>
-                        <p class="we-proffesion">Marketing</p>
-                        </div>
-                        <div class="we-sprite-cont">
-                            <button class="we-link">
-                                <svg class="we-sprite-1 items">
-                                    <use href="images/sprite.svg#icon-instagram-2"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-2 items">
-                                    <use href="images/sprite.svg#icon-twitter-1-1"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-3 items">
-                                    <use href="images/sprite.svg#icon-facebook-1"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-4 items">
-                                    <use href="images/sprite.svg#icon-linkedin-1"></use>
-                                </svg>
-                            </button>
+                        <div class="we-block">
+                            <h3 class="we-name">Николай Тарасов</h3>
+                            <p class="we-proffesion">Marketing</p>
+                            <div class="social">
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-twitter-1-1"></use>
+                                    </svg></a>
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-facebook-1"></use>
+                                    </svg></a>
+                                <a href="# " class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-linkedin-1"></use>
+                                    </svg></a>
+                            </div>
                         </div>
                     </li>
                     <li class="we-list-item">
                         <img src="images//index/yarmakov.jpg" alt="Михаил Ермаков" width="270" class="we-img" />
-                        <div class="item-back">
-                        <h3 class="we-name">Михаил Ермаков</h3>
-                        <p class="we-proffesion">UI Designer</p>
-                        </div>
-                        <div class="we-sprite-cont">
-                            <button class="we-link">
-                                <svg class="we-sprite-1 items">
-                                    <use href="images/sprite.svg#icon-instagram-2"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-2 items">
-                                    <use href="images/sprite.svg#icon-twitter-1-1"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-3 items">
-                                    <use href="images/sprite.svg#icon-facebook-1"></use>
-                                </svg>
-                            </button>
-                            <button class="we-link">
-                                <svg class="we-sprite-4 items">
-                                    <use href="images/sprite.svg#icon-linkedin-1"></use>
-                                </svg>
-                            </button>
+                        <div class="we-block">
+                            <h3 class="we-name">Михаил Ермаков</h3>
+                            <p class="we-proffesion">UI Designer</p>
+                            <div class="social">
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-twitter-1-1"></use>
+                                    </svg></a>
+                                <a href="#" class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-facebook-1"></use>
+                                    </svg></a>
+                                <a href="# " class="social-links">
+                                    <svg class="social-item">
+                                        <use href="images/sprite.svg#icon-linkedin-1"></use>
+                                    </svg></a>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section> 
-    <section class="section ">
-        <div class="container">
-            <h2 class="client-title">Постоянные клиенты</h2>
-            <ul class="client-list">
-                <li class="client-items">
-                    <button class="client-button">
-                        <svg class="client-svg">
-                            <use href="images/sprite.svg#icon-Logo-5"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="client-items">
-                    <button class="client-button">
-                        <svg class="client-svg">
-                            <use href="images/sprite.svg#icon-Logo"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="client-items">
-                    <button class="client-button">
-                        <svg class="client-svg">
-                            <use href="images/sprite.svg#icon-Logo-6"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="client-items">
-                    <button class="client-button">
-                        <svg class="client-svg">
-                            <use href="images/sprite.svg#icon-Logo-3"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="client-items">
-                    <button class="client-button">
-                        <svg class="client-svg">
-                            <use href="images/sprite.svg#icon-Logo-1"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="client-items">
-                    <button class="client-button">
-                        <svg class="client-svg">
-                            <use href="images/sprite.svg#icon-Logo-2"></use>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-
-        </div>
-    </section>
+        </section>
+        <section class="section client">
+            <div class="container">
+                <h2 class="client-title">Постоянные клиенты</h2>
+                <ul class="client-logo">
+                    <li class="client-item">
+                        <a href="#" class="client-link">
+                            <svg class="client-1">
+                                <use href="/images/sprite.svg#icon-Logo-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-item">
+                        <a href="#" class="client-link">
+                            <svg class="client-2">
+                                <use href="/images/sprite.svg#icon-Logo"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-item">
+                        <a href="#" class="client-link">
+                            <svg class="client-3">
+                                <use href="/images/sprite.svg#icon-Logo-6"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-item">
+                        <a href="#" class="client-link">
+                            <svg class="client-4">
+                                <use href="/images/sprite.svg#icon-Logo-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-item">
+                        <a href="#" class="client-link">
+                            <svg class="client-5">
+                                <use href="/images/sprite.svg#icon-Logo-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-item">
+                        <a href="#" class="client-link">
+                            <svg class="client-6">
+                                <use href="/images/sprite.svg#icon-Logo-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+        </section>
+    
     </main>
     
-    <footer>
-        <div class="container footer">
-            <div class="footer-adress">
+    <footer class="footer">
+    
+        <div class="container footer-blok">
+            <div class="address">
                 <a href="./index.html" class="footer-logo"><span class="footer-logo-decor">Web</span>Studio</a>
-                <address class="address">
+                <address>
                     <ul class="footer-adress-list">
-                        <li class="footer-link"><a href="#" class="address-post">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="footer-link"><a href="mailto:info@devstudio.com" class="address-email">info@devstudio.com</a></li>
-                        <li class="footer-link"><a href="tel:+380961111111" class="address-tel">+38 096 111 11 11</a></li>
+                        <li><a href="#" class="address-post">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li><a href="mailto:info@devstudio.com" class="address-email">info@devstudio.com</a></li>
+                        <li><a href="tel:+380961111111" class="address-tel">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
-            <div class="we-sprite-cont foot-sprite">
-                <div class="footer-sprite">
-                    <h2 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-                <button class="we-link foot">
-                    <svg class="we-sprite-1 items">
-                        <use href="images/sprite.svg#icon-instagram-2"></use>
-                    </svg>
-                </button>
-                <button class="we-link foot">
-                    <svg class="we-sprite-2 items">
-                        <use href="images/sprite.svg#icon-twitter-1-1"></use>
-                    </svg>
-                </button>
-                <button class="we-link foot">
-                    <svg class="we-sprite-3 items">
-                        <use href="images/sprite.svg#icon-facebook-1"></use>
-                    </svg>
-                </button>
-                <button class="we-link foot">
-                    <svg class="we-sprite-4 items">
-                        <use href="images/sprite.svg#icon-linkedin-1"></use>
-                    </svg>
-                </button>
-                </div>
+            <div class="join">
+                <h2 class="join-title">присоединяйтесь</h2>
+                <ul class="join-list">
+                    <li class="join-item">
+                        <a href="#" class="join-link">
+                            <svg class="join-img">
+                                <use href="./images/sprite.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-item">
+                        <a href="#" class="join-link">
+                            <svg class="join-img">
+                                <use href="./images/sprite.svg#icon-twitter-1-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-item">
+                        <a href="#" class="join-link">
+                            <svg class="join-img">
+                                <use href="./images/sprite.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-item">
+                        <a href="#" class="join-link">
+                            <svg class="join-img">
+                                <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     
