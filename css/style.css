@@ -45,8 +45,6 @@ ul {
 /* HEADER */
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -179,6 +177,7 @@ ul {
 .baner-button {
   width: 200px;
   height: 50px;
+  border: 0;
 
   font-family: roboto;
   background-color: var(--hover-color);
@@ -235,10 +234,9 @@ ul {
 }
 
 .skills-img {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
   background: var(--buttom-color);
   justify-content: center;
@@ -387,7 +385,7 @@ img {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .client-link {
@@ -577,6 +575,8 @@ address {
 :focus {
   background-color: var(--hover-color);
   color: var(--wait);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons-list {
@@ -639,7 +639,8 @@ address {
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
 }
-.examples-hover:hover {
+.examples-hover:hover,
+.examples-hover:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
