@@ -76,7 +76,10 @@ ul {
 .nav {
   margin-left: 93px;
 }
-
+.nav-box {
+  display: flex;
+  align-items: center;
+}
 .nav-list {
   display: flex;
 }
@@ -131,6 +134,7 @@ ul {
 .icon-contact {
   margin-right: 10px;
   align-items: baseline;
+  fill: currentColor;
 }
 
 .contacts-contact:hover,
@@ -155,8 +159,11 @@ ul {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/overlay.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-position: center;
 }
 
 .baner-container {
@@ -240,6 +247,7 @@ ul {
   height: 120px;
   background: var(--buttom-color);
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .s-item {
@@ -307,10 +315,12 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--wait);
 }
 
 .we-block {
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .we-name {
@@ -327,7 +337,7 @@ img {
 
 .we-proffesion {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
@@ -340,7 +350,7 @@ img {
   justify-content: center;
 }
 
-.social-links + .social-links {
+.social-items + .social-items {
   margin-left: 10px;
 }
 
@@ -351,7 +361,6 @@ img {
 
 .social-links {
   fill: #afb1b8;
-  margin-bottom: 42px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -453,6 +462,7 @@ img {
 
 .footer-blok {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -498,7 +508,9 @@ address {
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
-
+.item-footer + .item-footer {
+  margin-top: 9px;
+}
 .address-email:hover,
 :focus,
 .address-tel:hover,
@@ -532,19 +544,13 @@ address {
 }
 
 .join-item {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
 }
 
-.join-item:hover,
-.join-item:focus {
+.join-link:hover,
+.join-link:focus {
   background-color: var(--hover-color);
-  cursor: pointer;
 }
 
 .join-img {
@@ -552,7 +558,15 @@ address {
   height: 20px;
   fill: var(--wait);
 }
-
+.join-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
 /* СТОРІНКА PORTFOLIO */
 
 /* section buttons */
@@ -592,7 +606,6 @@ address {
 /* EXEMPL SECTION*/
 
 .exemple-text {
-  padding: 20px 24px;
   border-bottom: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
@@ -604,7 +617,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
-  margin-left: 24px;
+
   text-decoration: none;
 }
 
@@ -621,7 +634,7 @@ address {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-color);
-  margin-left: 24px;
+
   text-decoration: none;
 }
 
@@ -638,9 +651,9 @@ address {
   border-bottom: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
+  padding: 20px 24px;
 }
-.examples-hover:hover,
-.examples-hover:focus {
+.exemples-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
